@@ -33,7 +33,7 @@ public class Main {
                     System.out.print("Digite o valor em Celsius:\n >> ");
                     valorCelsius = sc.nextDouble();
                     valorFahrenheit = (valorCelsius * 9 / 5) + 32;
-                    System.out.printf("%.2fºC é igual a %.2fºF%n", valorCelsius, valorFahrenheit); // Usando printf para formatar duas casas decimais
+                    System.out.printf("%.2fºC é igual a %.2fºF\n", valorCelsius, valorFahrenheit); // Usando printf para formatar duas casas decimais
                     sc.nextLine(); // Apenas para limpar possíveis caracteres indesejados que sejam preenchidos no próximo sc.nextLine
                     System.out.print("Deseja converter novamente em Celsius? s/n\n >> ");
                     converterNovamente = sc.nextLine();
@@ -46,7 +46,7 @@ public class Main {
                     valorFahrenheit = sc.nextDouble();
 
                     valorCelsius = (valorFahrenheit - 32 ) * 5 / 9;
-                    System.out.printf("%.2fºF é igual a %.2fºC%n", valorFahrenheit, valorCelsius); // Usando printf para formatar duas casas decimais
+                    System.out.printf("%.2fºF é igual a %.2fºC\n", valorFahrenheit, valorCelsius); // Usando printf para formatar duas casas decimais
                     sc.nextLine(); // Apenas para limpar possíveis caracteres indesejados que sejam preenchidos no próximo sc.nextLine
                     System.out.print("Deseja converter novamente em Fahrenheit? s/n\n >> ");
                     converterNovamente = sc.nextLine();
@@ -54,6 +54,7 @@ public class Main {
                 } while (converterNovamente.equals("s"));
 
             } else {
+                sc.nextLine(); // Apenas para limpar possíveis caracteres indesejados que sejam preenchidos no próximo sc.nextLine
                 System.out.println("Escolha não identificada! Escolha entre [1] e [2]");
             }
 
